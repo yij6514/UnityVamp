@@ -24,8 +24,8 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 mouse = Input.mousePosition;
         float d = cam.nearClipPlane;
-        mouse.z = d;
+        //mouse.z = d;
         Vector3 worldMousePos = cam.ScreenToWorldPoint(mouse);
-        Debug.Log(worldMousePos);
+        Debug.Log(mouse);
     }
 }
